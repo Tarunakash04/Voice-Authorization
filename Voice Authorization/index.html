@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Authorization</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Voice Authorization</h1>
+    <p id="status">Please allow microphone access.</p>
+    <button id="recording-button">Start Voice Authorization</button>
+
+    <!-- Lottie animation (Initially hidden) -->
+    <div id="lottie-container" class="hidden">
+      <dotlottie-player 
+        src="https://lottie.host/a02a3a59-f422-4da0-858e-32ba7193c18a/vv7E6Y5zSn.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px;" 
+        loop autoplay>
+      </dotlottie-player>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
